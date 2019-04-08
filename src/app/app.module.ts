@@ -7,11 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { PageListComponent } from './page-list/page-list.component';
+import { WikiService } from './wiki/wiki.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    PageListComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient, WikiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

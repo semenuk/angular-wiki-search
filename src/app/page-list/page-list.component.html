@@ -1,0 +1,14 @@
+<table class="table" *ngIf="pages.length">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Страница</th>
+      <th scope="col">Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let page of pages">
+      <td><a target="_blank" [href]="page.url">{{page.title}}</a></td>
+      <td>{{page.snippet}}</td>
+    </tr>
+  </tbody>
+</table>
