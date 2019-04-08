@@ -1,0 +1,4 @@
+<form class="form-row flex-nowrap" (ngSubmit)="onSubmit()">
+  <input class="form-control mr-2" type="text" [formControl]="searchInput" [ngbTypeahead]="showLastRequests"> 
+  <button class="btn btn-primary" type="submit">Поиск</button>
+</form>
